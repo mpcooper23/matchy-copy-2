@@ -41,8 +41,16 @@ Write a function declaration called `replace` with a signature of `replace(anima
    - If an animal with that name exists within the `animals` Array, replace it's entire Object with the replacement Object.
    - Otherwise do nothing.
  2. Preview the `index.html` page to test it on the website.
+*/
 
+function replace(animals, name, replacement){
+    for (let i = 0; i < animals.length; i++){
+        if(animals[i] === name) {
+            animals[i] = replacement
+        }
+    }
 
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
