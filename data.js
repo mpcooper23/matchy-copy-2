@@ -148,16 +148,18 @@ noises[noises.length] = 'sneeze'
  //Choosing a list-like array as a storage container that can be mutated
 
  var friends = [];
-
+// Function Output: one randomly selected interger
  function getRandom(array) {
   let random = Math.floor(Math.random() * array.length);
   return random;
 }
-
+//invoke function to retrieve random interger and then use in bracket notation
 let randomAnimal = animals[getRandom(animals)];
-friends.push(randomAnimal);
+let newFriends = friends.push(randomAnimal.name);
 
-console.log(friends); // Output: An array with one randomly selected animal
+monkey.friends.push(newFriends)
+
+console.log(friends); 
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
