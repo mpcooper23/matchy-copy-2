@@ -149,13 +149,15 @@ noises[noises.length] = 'sneeze'
 
  var friends = [];
 
- function getRandom(array){
+ function getRandom(array) {
   let random = Math.floor(Math.random() * array.length);
   return random;
 }
 
-//let random = friends.push(getRandom(animal))
-//var random = getRandom(animals)
+let randomAnimal = animals[getRandom(animals)];
+friends.push(randomAnimal);
+
+console.log(friends); // Output: An array with one randomly selected animal
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
