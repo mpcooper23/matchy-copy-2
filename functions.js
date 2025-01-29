@@ -23,7 +23,7 @@
 
 function search(animals, string){
 for(let i = 0; i < animals.length; i++){
-    if (animals[i] === string){
+    if (animals[i].name === string){//make sure to use dot notation to access animals name
         return animals[i]
     }
 }
@@ -45,7 +45,7 @@ Write a function declaration called `replace` with a signature of `replace(anima
 
 function replace(animals, name, replacement){
     for (let i = 0; i < animals.length; i++){
-        if(animals[i] === name) {
+        if(animals[i].name === name) {//again, needs dot notation to access the animal name
             animals[i] = replacement
         }
     }
