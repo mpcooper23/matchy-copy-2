@@ -64,7 +64,7 @@ function replace(animals, name, replacement){
 for(let i = 0; i < animals.length; i++){
     if(animals[i].name === name){
         delete animals[i]
-    }else {
+    }else if (animals[i].name !== name) {
         return animals[i]
     }
 }
