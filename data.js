@@ -150,8 +150,8 @@ noises[noises.length] = 'sneeze'
  var friends = [];
 // Function Output: one randomly selected interger
  function getRandom(array) {
-  let random = Math.floor(Math.random() * array.length);
-  return random;
+  return Math.floor(Math.random() * array.length);
+
 }
 //invoke function to retrieve random interger and then use in bracket notation
 let randomAnimal = animals[getRandom(animals)];
