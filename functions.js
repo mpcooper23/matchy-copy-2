@@ -90,12 +90,36 @@ C: conditional statements for name, species
 E:
 */
 
+function add(animals, animal) {
+    // Check if the animal has a valid name and species
+    if (animal.name && animal.name.length > 0 && animal.species && animal.species.length > 0) {
+      // Check if the animal already exists in the array
+      for (let i = 0; i < animals.length; i++) {
+        if (animals[i].name === animal.name) {
+          return; // Exit if the animal already exists
+        }
+      }
+      // Add the new animal to the array
+      animals.push(animal);
+    }
+  }
+  
+
+
+/*WRONG:
 
 function add(animals, animal){
 for (let i = 0; i < animals.length; i++){
-    
+    if(animals[i].name && animals.name.length > 0){
+if(animals[i].species && animals.species.length > 0){
+if(animals[i].name !== animals.name){
+    animals.push(animal)
 }
 }
+    }
+}
+}*/
+
 
 /**
  * You did it! You're all done with Matchy!
