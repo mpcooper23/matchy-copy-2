@@ -155,10 +155,10 @@ noises[noises.length] = 'sneeze'
 }
 //invoke function to retrieve random interger and then use in bracket notation
 let randomAnimal = animals[getRandom(animals)];
-let newFriends = friends.push(randomAnimal.name);
+friends.push(randomAnimal.name);
 
-monkey.friends.push(newFriends)
-
+animals[2]['friends'] = friends;//at least one animal should have a friends array
+                                  //use bracket notation to access the object and then bracket notation again to reach that object's friends array
 console.log(friends); 
 
 /**
