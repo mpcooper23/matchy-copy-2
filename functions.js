@@ -63,11 +63,9 @@ function replace(animals, name, replacement){
  function remove(animals, name){
 for(let i = 0; i < animals.length; i++){
     if(animals[i].name === name){
-        delete animals[i]
-    }else if (animals[i].name !== name) {
-        return animals[i]
+        animals.splice(i, 1) //NOT animals[i].splice(1), but animals.splice(i, 1)
     }
-}
+} return animals
  }
 
 
@@ -85,11 +83,18 @@ Checks that the animal Object has a species property with a length > 0.
 Has a unique name, meaning no other animals have that name.
 Adds this new Object to the animals Array, only if all the other conditions pass.
 Make sure it works.
+
+I: array and object
+O:
+C: conditional statements for name, species
+E:
 */
 
 
 function add(animals, animal){
-
+for (let i = 0; i < animals.length; i++){
+    
+}
 }
 
 /**
